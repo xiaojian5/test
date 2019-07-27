@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         int i = 4444444;
-        int ii = 2222332233;
+        int ii = 222332233;
      int iii = 1332233;
         System.out.println("Hello World!");
   /*      int i = 4444444;
