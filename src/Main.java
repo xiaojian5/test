@@ -36,7 +36,7 @@ public class Main {
 //
 //        }
 //        System.out.println(128!=128);
-        List<Book> students = new ArrayList<>();
+//        List<Book> students = new ArrayList<>();
 
 //        students.add(new Book(3,"张三","90"));
 //        students.add(new Book(2,"李四","90"));
@@ -49,37 +49,37 @@ public class Main {
 //            }
 //        }
 //        throw new NullPointerException();
-        List<Integer> list1=new ArrayList<>();
-        list1.add(1);
-        list1.add(2);
-        list1.add(3);
-        list1.add(4);
-        list1.add(5);
-
-        List<Integer> list2=new ArrayList<>();
-        list2.add(3);
-//        list2.add(4);
-//        list2.add(5);
-
-        System.out.println("====求交集===");
-
-        List<Integer> list=list1.stream().filter(t->list2.contains(t)).collect(Collectors.toList());
-        list.stream().forEach(System.out::println);
-
-
-
-
-        System.out.println("====求差集===");
-        list=list1.stream().filter(t-> !list2.contains(t)).collect(Collectors.toList());
-        list.stream().forEach(System.out::println);
-
-
-        System.out.println("====求并集===");
-
-        list.addAll(list1);
-        list.addAll(list2);
-        list=list.stream().distinct().collect(Collectors.toList());
-        list.stream().forEach(System.out::println);
+//        List<Integer> list1=new ArrayList<>();
+//        list1.add(1);
+//        list1.add(2);
+//        list1.add(3);
+//        list1.add(4);
+//        list1.add(5);
+//
+//        List<Integer> list2=new ArrayList<>();
+//        list2.add(3);
+////        list2.add(4);
+////        list2.add(5);
+//
+//        System.out.println("====求交集===");
+//
+//        List<Integer> list=list1.stream().filter(t->list2.contains(t)).collect(Collectors.toList());
+//        list.stream().forEach(System.out::println);
+//
+//
+//
+//
+//        System.out.println("====求差集===");
+//        list=list1.stream().filter(t-> !list2.contains(t)).collect(Collectors.toList());
+//        list.stream().forEach(System.out::println);
+//
+//
+//        System.out.println("====求并集===");
+//
+//        list.addAll(list1);
+//        list.addAll(list2);
+//        list=list.stream().distinct().collect(Collectors.toList());
+//        list.stream().forEach(System.out::println);
 //        int studentId = 3;
 //        Book student = students.stream().filter(o -> o.getReleaseYear() == studentId).findAny().orElse(null);
 //        System.out.println(student);
