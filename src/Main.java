@@ -1,14 +1,24 @@
 import sun.plugin.javascript.navig.Array;
 
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class Main {
 
     public static void main(String[] args) {
-        int i = 4444444;
-        int ii = 222332233;
-     int iii = 1332233;
+//        int i = 4444444;
+//        int ii = 222332233;
+//     int iii = 1332233;
+//        System.out.println("是正确格式的手机号:"+isMobile("13496215263"));
+        Long l = 127L;
+        Long i = 127L;
+        System.out.println(l==i);
+        Long a = 128L;
+        Long A = 128L;
+        System.out.println(a==A);
+        System.out.println(a.longValue()==A.longValue());
 //        System.out.println("Hello World!");
 //        System.out.println("22");
   /*      int i = 4444444;
@@ -104,6 +114,20 @@ public class Main {
 //        }
 //        get(bookList);
     }
+
+    public static boolean isMobile(String str) {
+        Pattern p = null;
+        Matcher m = null;
+        boolean b = false;
+        String s2="^[1](([3|5|8][\\d])|([4][4,5,6,7,8,9])|([6][2,5,6,7])|([7][^9])|([9][1,8,9]))[\\d]{8}$";// 验证手机号
+//        if(StringUtils.isNotBlank(str)){
+            p = Pattern.compile(s2);
+            m = p.matcher(str);
+            b = m.matches();
+//        }
+        return b;
+    }
+
     private static void get(Map<Integer, Book> BookMap){
         BookMap.forEach((k,v) -> System.out.println("key : " + k + "; value : " + v));
     }
