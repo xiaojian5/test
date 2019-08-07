@@ -15,8 +15,8 @@ public class Main {
         Long l = 126L;
         Long i = 126L;
         System.out.println(l==i);
-        Long a = 128L;
-        Long A = 128L;
+        Long a = 555L;
+        Long A = 555L;
         System.out.println(a==A);
         System.out.println(a.longValue()==A.longValue());
 
