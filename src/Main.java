@@ -12,11 +12,11 @@ public class Main {
 //        int ii = 222332233;
 //     int iii = 1332233;
 //        System.out.println("是正确格式的手机号:"+isMobile("13496215263"));
-        Long l = 126L;
-        Long i = 126L;
+        Long l = 155L;
+        Long i = 155L;
         System.out.println(l==i);
-        Long a = 128L;
-        Long A = 128L;
+        Long a = 155L;
+        Long A = 155L;
         System.out.println(a==A);
         System.out.println(a.longValue()==A.longValue());
 
