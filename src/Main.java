@@ -13,7 +13,7 @@ public class Main {
 //     int iii = 1332233;
 //        System.out.println("是正确格式的手机号:"+isMobile("13496215263"));
         Long l = 126L;
-        Long i = 127L;
+        Long i = 126L;
         System.out.println(l==i);
         Long a = 128L;
         Long A = 128L;
