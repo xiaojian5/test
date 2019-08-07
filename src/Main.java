@@ -24,6 +24,8 @@ public class Main {
         Long aa = 129L;
         Long Aa = 129L;
         System.out.println(aa.longValue()==Aa.longValue());
+        System.out.println(aa.longValue()==Aa.longValue());
+        System.out.println(aa.longValue()==Aa.longValue());
 
 //        System.out.println("Hello World!");
 //        System.out.println("22");
